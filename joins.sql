@@ -7,7 +7,8 @@ ORDER BY CategoryName, ProductName;
 
 -- 2
 SELECT ProductID, ProductName, UnitPrice, suppliers.CompanyName FROM products
-JOIN suppliers ON products.SupplierID = suppliers.SupplierID
+JOIN suppliers ON products.SupplierID = suppliers.SupplierID\
+WHERE products.UnitPrice >= 75
 ORDER BY ProductName;
 
 -- 3
